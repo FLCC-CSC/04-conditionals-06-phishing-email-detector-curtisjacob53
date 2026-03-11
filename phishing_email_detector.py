@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Jacob Jackson
+# DATE: 03/11/2026
+# BRIEF DESCRIPTION: Phishing Email Detector 
 
 
 
@@ -14,6 +14,21 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+subject = input("Enter the email subject line:")
+subject_lower = subject.lower()
+
+print("SECURITY ASSESSMENT:")
+
+if "urgent" in subject_lower or "immediate action required" in subject_lower:
+    print("HIGH RISK: Possible phishing attempt.")
+elif "win" in subject_lower or "free" in subject_lower:
+    print("MEDUIM RISK: Suspicious offer detected.")
+elif "password reset" in subject_lower:
+    print("LOW RISK: Verify legitimacy with sender.") 
+else: print("No phishing indicators detected")
+
+print("------------------------")
+print(f'Analyzed subject: "{subject}"')
 
 
 
@@ -77,7 +92,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-
+it was easier than expected because it flows more naturally with the normal laungauge. 
 
 
 
@@ -98,7 +113,7 @@ Please gauge your utilization of AI on the following spectrum. Place an "X" in f
 of the appropriate response. Only choose one of the following:
 
 [ ] I did not use AI at all for this lab.
-[ ] I wrote the initial draft of the software but had AI help me make it better.
+[X] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
 
@@ -110,8 +125,10 @@ like AI and internet sites like Chegg, CourseHero, StackOverflow, and general Go
 may impede your understanding. Please rate how well you understand the concepts in this lab: 
 
 [ ] I understand very little about this lab.
-[ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
+[X] I am about 50/50 on this lab; I get parts of it but not the whole picture.
 [ ] I pretty much get it.
 [ ] I'm solid. Totally got it.
 
+#python: https://chatgpt.com/s/t_69b1406c6cf48191ab6e5a868b652b3d
+#python: https://chatgpt.com/s/t_69b13f4931b48191ba2cd9b2f8349ae9
 '''
